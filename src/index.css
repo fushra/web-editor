@@ -1,0 +1,49 @@
+:root {
+  --color-bg: #d6dada;
+  --color-shadow-highlight: #b6b9b9;
+  --color-shadow-dark: #f6fbfb;
+
+  --neo-tiny: 5px 5px 10px var(--color-shadow-highlight),
+    -5px -5px 10px var(--color-shadow-dark);
+
+  --neo-normal: 10px 10px 20px var(--color-shadow-highlight),
+    -10px -10px 20px var(--color-shadow-dark);
+
+  --neo-large: 15px 15px 30px var(--color-shadow-highlight),
+    -15px -15px 30px var(--color-shadow-dark);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#secondary {
+  display: grid;
+  grid-template-rows: auto fill;
+}
+
+.card {
+  box-shadow: var(--neo-normal);
+  margin: 15px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.CodeMirror {
+  height: 100%;
+  background-color: var(--color-bg);
+}
+
+.CodeMirror-gutters {
+  background-color: var(--color-bg);
+}
